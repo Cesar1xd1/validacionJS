@@ -1,0 +1,36 @@
+footer {
+    background-color: aqua;
+    
+}
+
+.center{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.tarjeta-secundaria{
+    background-color: yellow;
+}
+
+.inicial{
+    color: red;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border: 15px red dotted;
+    margin: 15px;
+
+    text-align: center;
+    
+}
+
+section div{
+    font-family: monospace;
+}
+
+.tarjeta-primaria{
+
+}
+
+section:first-child{
+    cursor: pointer;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../assets/scripts/JS/funciones_form.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <header>
+        <a href="index.html">LOGO</a>
+    </header>
+
+    <main>
+        <p>Registrate en el sistema</p>
+        <form action="#" method="POST" onsubmit="return validarFormulario()">
+            <h3 id="nom-msj"></h3>
+            
+            <label for="">numero de control:</label>
+            <input type="text" name="num_control" id="num_control" placeholder="Sol numeros" onkeypress="return solonumeros(event);" pattern="[0-9]*" required maxlength="8" title="SOLO NUMEROS!">
+            <br>
+
+            <label for="">nombre: </label>
+            <input type="text" name="nombre" id="nombre" onkeypress="return sololetras(event);" placeholder="Nombre"> <span id="nom-msj"></span>
+            <br>
+
+            <label for="">primer apellido: </label>
+            <input type="text" name="primer_ap" id="primer_ap" onkeypress="return sololetras(event);" placeholder="Primer Apellido">
+            <br>
+
+            <label for="">segundo apellido: </label>
+            <input type="text" name="segundo_ap" id="segundo_ap" onkeypress="return sololetras(event);" placeholder="Segundo Apellido">
+            <br>
+            
+            <label for="">Edad:</label>
+            <input type="number" name="edad" onkeypress="return solonumeros(event);" id="edad">
+            <br>
+
+            <label for="">Semestre: </label>
+            <input type="number" name="semestre" onkeypress="return solonumeros(event);" id="semestre" min="1" max="12">
+            <br>
+            
+
+            <label for="">Carrera:</label>
+            <select id="carrera" name="carrera">
+                <optgroup label="Chidas"></optgroup>
+                <option value="ISC">ISC</option>
+                <option value="IM">IM</option>
+                <option value="IIA">IIA</option>
+                <optgroup label="No tan chidas"></optgroup>
+                <option value="LA">LA</option>
+                <option value="CP">CP</option>
+            </select>
+            <br>
+
+            <p>Selecciona tus actividades extraescolares:</p>
+
+            <label for="chk_deportes">Deportes</label>
+            <input type="checkbox" id="chk_deportes" name="chk_deportes" value="deportes"><br>
+
+            <label for="chk_musica">Musica</label>
+            <input type="checkbox" id="chk_musica" name="chk_musica" value="musica"><br>
+
+            <label for="chk_danza">Danza</label>
+            <input type="checkbox" id="chk_danza" name="chk_danza" value="danza"><br>
+            <br>
+
+            <p>Selecciona tu especialidad:</p>
+
+            <input type="radio" id="devops" name="especialidad" checked value="DEVOPS">
+            <label for="radio">DEVOPS</label><br>
+            
+            <label for="cyberseguridad">Ciberseguridad:</label>
+            <input type="radio" id="cyberseguridad" name="especialidad" value="Ciberseguridad"><br>
+
+            <label for="robotica">Robótica:</label>
+            <input type="radio" id="robotica" name="especialidad" value="Robótica"><br>
+
+            <label for="medicina">Medicina:</label>
+            <input type="radio" id="medicina" name="especialidad" value="Medicina"><br>
+
+            <label for="alimentacion">Alimentación:</label>
+            <input type="radio" id="alimentacion" name="especialidad" value="Alimentación">
+            <br>
+            <br>
+
+            <textarea name="comentarios" id="comentarios" cols="30" rows="10" placeholder="comentarios"></textarea>
+
+            <br>
+            <input type="submit" value="REGISTRAR">
+    
+        </form>
+    </main>
+
+</body>
+
+</html>
